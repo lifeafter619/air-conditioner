@@ -1,16 +1,18 @@
 import React from 'react'
-import { Fade } from '@mui/material'
-import { EnergyLabel, EnergySavingLabel } from './EnergyLabel'
+
+import { Fade } from '../Fade'
+import { AcDisplay } from './AcDisplay'
+import { EnergyLabel } from './EnergyLabel'
+import { EnergySavingLabel } from './EnergySavingLabel'
 import type { AcMode } from '~/types'
 
 import * as pkg from '~/../package.json'
 
 import './AirConditioner.scss'
-import { useAcCtx } from '~/context'
 
 // import { adsenseLink, jumpToAdsense } from "../adsense";
 
-const acColor = {
+export const acColor = {
   border: '#e0e0e0',
   display: '#cccccc',
   wind: '#bbbbbb',
@@ -32,41 +34,6 @@ const AcBorder: React.FC<React.PropsWithChildren> = (props) => {
 }
 
 /**
- * 空调温度
- * @returns
- */
-const AcTemperature: React.FC = () => {
-  const { state } = useAcCtx()
-  return (
-    <h4 className="text-4xl text-center">
-      <span className="font-digit ac-temperature">{state.temperature}</span>
-      <small className="font-digit">°C</small>
-    </h4>
-  )
-}
-
-/**
- * 显示屏（温度/图标）
- * @param props
- */
-const AcDisplay = React.forwardRef((props: { mode: AcMode }, ref) => {
-  return (
-    <div
-      className="absolute top-6 right-8"
-      ref={ref as React.RefObject<HTMLDivElement>}
-      style={{
-        color: acColor.display,
-      }}
-    >
-      <h6 className="text-left text-sm">
-        <span>{props.mode === 'cold' ? '❄' : '☀️'}</span>️️
-      </h6>
-      <AcTemperature />
-    </div>
-  )
-})
-
-/**
  * 空调 Logo
  * @param props
  */
@@ -74,6 +41,7 @@ const AcLogo: React.FC = () => {
   return (
     <div className="text-center mt-28">
       <a
+        className='block'
         href={pkg.repository.url}
         title={pkg.description}
         target="_blank"
@@ -158,7 +126,7 @@ const AirConditioner: React.FC<{
         <EnergyLabel titleLength={6} />
         {import.meta.env.VITE_DISABLE_ADSENSE ? null : <EnergySavingLabel />}
       </AcBorder>
-      <Fade in={props.status} timeout={{ enter: 2500, exit: 1500 }}>
+      <Fade in={props.status}>
         <WindEffect />
       </Fade>
     </div>
