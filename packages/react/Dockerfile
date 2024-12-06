@@ -10,5 +10,5 @@ RUN pnpm install && npm run build
 FROM nginx:alpine
 
 ENV AC_NGINX_PORT=80 AC_NGINX_DOMAIN=localhost
-COPY --from=builder /app/dist /usr/share/nginx/html
+COPY --from=builder /app/packages/react/dist /usr/share/nginx/html
 EXPOSE 80

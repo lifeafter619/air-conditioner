@@ -1,6 +1,6 @@
 import type { FC } from 'react'
-import { adsenseLink, jumpToAdsense } from '~/utils/adsense'
 import useDark from '~/hooks/useDark'
+import { adsenseLink, jumpToAdsense } from '~/utils/adsense'
 
 /**
  * 喜马拉雅链接
@@ -36,7 +36,7 @@ const ProTip: FC = () => {
             '清凉'
           )
         : (
-          <AdsenseLink text="清凉" />
+            <AdsenseLink text="清凉" />
           )}
       ！
     </div>

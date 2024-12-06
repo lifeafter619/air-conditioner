@@ -10,7 +10,6 @@ package-lock.json
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
 /.pnp
 .pnp.js
 
@@ -34,6 +33,11 @@ yarn-error.log*
 # jetbrains
 .idea
 
+node_modules
 dist
 dist-ssr
 *.local
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/

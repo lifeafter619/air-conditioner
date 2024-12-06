@@ -1,10 +1,10 @@
 import * as path from 'node:path'
-import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import Unocss from 'unocss/vite'
 
+import { defineConfig } from 'vite'
 import Pages from 'vite-plugin-pages'
 import { VitePWA } from 'vite-plugin-pwa'
-import Unocss from 'unocss/vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({

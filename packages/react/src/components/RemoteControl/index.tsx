@@ -1,12 +1,12 @@
-import React from 'react'
-
 import { blue, green, red } from '@mui/material/colors'
-import RCButton from './RCButton'
-import { useAcTemperature } from './temperature'
-import { getAssetsUrl } from '~/utils'
 
-import './index.scss'
+import React from 'react'
 import { useAc, useAcCtx } from '~/context'
+import { getAssetsUrl } from '~/utils'
+import RCButton from './RCButton'
+
+import { useAcTemperature } from './temperature'
+import './index.scss'
 
 let playStartSoundTimeoutId: any
 let playWorkSoundTimeoutId: any

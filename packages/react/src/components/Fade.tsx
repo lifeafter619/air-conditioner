@@ -1,6 +1,6 @@
 import type { TransitionStatus } from 'react-transition-group'
-import { Transition } from 'react-transition-group'
 import React, { useRef } from 'react'
+import { Transition } from 'react-transition-group'
 
 const duration = 300
 

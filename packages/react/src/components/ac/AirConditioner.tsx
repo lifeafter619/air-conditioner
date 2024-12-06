@@ -1,12 +1,12 @@
-import React from 'react'
+import type { AcMode } from '~/types'
 
+import React from 'react'
+import * as pkg from '~/../package.json'
 import { Fade } from '../Fade'
 import { AcDisplay } from './AcDisplay'
 import { EnergyLabel } from './EnergyLabel'
-import { EnergySavingLabel } from './EnergySavingLabel'
-import type { AcMode } from '~/types'
 
-import * as pkg from '~/../package.json'
+import { EnergySavingLabel } from './EnergySavingLabel'
 
 import './AirConditioner.scss'
 

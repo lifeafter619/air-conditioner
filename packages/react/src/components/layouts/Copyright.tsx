@@ -1,5 +1,5 @@
-import React from 'react'
 import { IconButton, Tooltip } from '@mui/material'
+import React from 'react'
 import * as pkg from '~/../package.json'
 
 const socialList = [

@@ -1,7 +1,7 @@
-import React from 'react'
-import { acColor } from './AirConditioner'
 import type { AcMode } from '~/types'
+import React from 'react'
 import { useAcCtx } from '~/context'
+import { acColor } from './AirConditioner'
 
 /**
  * 空调温度

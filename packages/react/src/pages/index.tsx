@@ -1,14 +1,14 @@
-import React from 'react'
 import { Button } from '@mui/material'
-
-import ProTip from '~/components/ProTip'
-import RemoteControl from '~/components/RemoteControl'
+import React from 'react'
 
 import AirConditioner from '~/components/ac/AirConditioner'
+import ProTip from '~/components/ProTip'
+
+import RemoteControl from '~/components/RemoteControl'
 import Toast from '~/components/Toast'
 
-import { useDetectStorage } from '~/hooks'
 import { useAcCtx } from '~/context'
+import { useDetectStorage } from '~/hooks'
 
 /**
  * 主页

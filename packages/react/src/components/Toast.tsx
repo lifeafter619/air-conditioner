@@ -1,4 +1,3 @@
-import React from 'react'
 import type {
   AlertColor,
   AlertProps,
@@ -7,6 +6,7 @@ import {
   Alert as MuiAlert,
   Snackbar,
 } from '@mui/material'
+import React from 'react'
 import { useToastCtx } from '~/context/toast'
 
 const Alert = React.forwardRef<HTMLDivElement, AlertProps>((

@@ -1,21 +1,27 @@
 {
   "name": "air-conditioner",
-  "description": "云空调，便携小空调",
-  "packageManager": "pnpm@8.15.1",
   "type": "module",
   "version": "0.1.3",
   "private": true,
+  "packageManager": "pnpm@9.14.4",
+  "description": "云空调，便携小空调",
   "author": {
     "url": "https://www.yunyoujun.cn",
     "email": "me@yunyoujun.cn",
     "name": "YunYouJun"
   },
+  "homepage": "https://ac.yunyoujun.cn/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YunYouJun/air-conditioner"
+  },
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "serve": "vite preview",
-    "lint": "eslint \"**/*.{tsx,ts,js}\"",
-    "lint:fix": "eslint \"**/*.{tsx,ts,js}\" --fix",
+    "build": "pnpm -r run build",
+    "react:dev": "pnpm -C packages/react run dev",
+    "react:build": "pnpm -C packages/react run build",
+    "vue:dev": "pnpm -C packages/vue run dev",
+    "vue:build": "pnpm -C packages/vue run build",
+    "lint": "eslint .",
     "typecheck": "tsc --noEmit"
   },
   "browserslist": {
@@ -30,40 +36,13 @@
       "last 1 safari version"
     ]
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/YunYouJun/air-conditioner"
-  },
-  "homepage": "https://ac.yunyoujun.cn/",
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-ga": "^3.3.1",
-    "react-gtm-module": "2.0.11",
-    "react-router-dom": "^6.22.0",
-    "sass": "^1.70.0",
-    "web-vitals": "^3.5.2"
-  },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.6.3",
-    "@emotion/react": "^11.11.3",
-    "@emotion/styled": "^11.11.0",
-    "@iconify-json/ic": "^1.1.17",
-    "@iconify-json/mdi": "^1.1.64",
-    "@mui/material": "^5.15.7",
-    "@types/node": "^20.11.16",
-    "@types/react": "^18.2.52",
-    "@types/react-dom": "^18.2.18",
-    "@types/react-gtm-module": "2.0.3",
-    "@types/react-router-dom": "^5.3.3",
-    "@vitejs/plugin-react": "^4.2.1",
-    "eslint": "^8.56.0",
-    "react-transition-group": "^4.4.5",
-    "typescript": "^5.3.3",
-    "unocss": "^0.58.4",
-    "usehooks-ts": "^2.12.1",
-    "vite": "^5.0.12",
-    "vite-plugin-pages": "^0.32.0",
-    "vite-plugin-pwa": "^0.17.5"
+    "@antfu/eslint-config": "^3.11.2",
+    "@iconify-json/ic": "^1.2.1",
+    "@iconify-json/mdi": "^1.2.1",
+    "@playwright/test": "^1.49.0",
+    "@types/node": "^22.10.1",
+    "eslint": "^9.16.0",
+    "typescript": "^5.6.3"
   }
 }

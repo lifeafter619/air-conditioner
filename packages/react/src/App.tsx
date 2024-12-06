@@ -1,13 +1,13 @@
 import type { FC } from 'react'
 import { Suspense, useEffect } from 'react'
-import './App.scss'
-
 import { BrowserRouter as Router, useRoutes } from 'react-router-dom'
-import pkg from '../package.json'
-import Copyright from '~/components/layouts/Copyright'
 
 // @ts-expect-error vite-plugin-pages
 import routes from '~react-pages'
+import Copyright from '~/components/layouts/Copyright'
+import pkg from '../package.json'
+
+import './App.scss'
 
 /**
  * 控制台输出信息
