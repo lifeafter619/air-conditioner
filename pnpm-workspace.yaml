@@ -1,2 +1,32 @@
 packages:
   - packages/*
+catalog:
+  '@antfu/eslint-config': ^3.12.1
+  '@emotion/react': ^11.14.0
+  '@emotion/styled': ^11.14.0
+  '@iconify-json/ic': ^1.2.2
+  '@iconify-json/mdi': ^1.2.2
+  '@mui/material': ^5.16.13
+  '@playwright/test': ^1.49.1
+  '@types/node': ^22.10.2
+  '@types/react': ^18.3.18
+  '@types/react-dom': ^18.3.5
+  '@types/react-gtm-module': 2.0.3
+  '@types/react-router-dom': ^5.3.3
+  '@vitejs/plugin-react': ^4.3.4
+  bumpp: ^9.9.2
+  eslint: ^9.17.0
+  react: ^18.3.1
+  react-dom: ^18.3.1
+  react-ga: ^3.3.1
+  react-gtm-module: 2.0.11
+  react-router-dom: ^6.28.1
+  react-transition-group: ^4.4.5
+  sass: ^1.83.0
+  typescript: ^5.7.2
+  unocss: ^0.65.3
+  usehooks-ts: ^3.1.0
+  vite: ^6.0.6
+  vite-plugin-pages: ^0.32.4
+  vite-plugin-pwa: ^0.21.1
+  web-vitals: ^4.2.4
